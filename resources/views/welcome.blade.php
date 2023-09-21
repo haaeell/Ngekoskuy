@@ -1,5 +1,5 @@
 @extends('layouts.landingpage')
 
 @section('content')
-    <h1>Cobaa</h1>
+    <h1>haloo</h1>
 @endsection
