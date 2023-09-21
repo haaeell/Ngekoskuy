@@ -20,6 +20,8 @@ Route::get('/', function () {
 });
 // Route::get('/about', [LandingPageController::class, 'about'])->name('about');
 
+Route::get('/daftarkos', [LandingPageController::class, 'daftarKos'])->name('daftarkos');
+
 Route::middleware(['auth'])->group(function () {
     
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
