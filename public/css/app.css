@@ -25,3 +25,11 @@ body{
     background-color: #fff;
     color: black;
 }
+
+.footer{
+    background: linear-gradient(to right, #003D64, #008FEB);
+}
+
+.footer .kol i{
+    font-size: 1.5rem;
+}
