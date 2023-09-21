@@ -1,11 +1,10 @@
-@extends('layouts.app')
+
+@extends ('layouts.dashboard')
 
 @section('content')
-<div class="container">
-    <div class="row justify-content-center align-items-center">
-        <div class="col-md-8">
-            <h3 class="fw-bold text-center">Ini Dashboard</h3>
-        </div>
+@section('judul','Dashboard Admin')
+@section('title','Dashboard Admin')
+    <div class="card p-5 min-vh-100">
+       
     </div>
-</div>
 @endsection
