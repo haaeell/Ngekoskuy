@@ -10,10 +10,23 @@
 <div class="container">
     <div class="row d-flex align-items-center">
         <div class="col-6">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, magnam ad quibusdam eligendi dolorem eveniet. Delectus consequuntur explicabo dignissimos quaerat totam magnam, debitis unde ea voluptate nihil. Fugiat molestiae pariatur aut, minima consequatur odit quod animi, cupiditate unde voluptatibus, quas sunt veritatis deserunt tempore adipisci suscipit saepe nulla placeat velit eaque quae nobis? Quo quidem nobis magni possimus mollitia fugit voluptas blanditiis architecto perspiciatis, ad quae temporibus reiciendis facere assumenda, dicta odio provident necessitatibus repellat neque? Id consequatur repellendus sit? Libero eveniet sit aperiam corrupti impedit error. Porro corrupti similique cum tempore perferendis laborum, quo, rerum ab consectetur, est culpa?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea eum, quae amet accusantium, provident adipisci totam ducimus quisquam expedita quam labore quibusdam nulla deleniti ratione iure illum vel minus dolorem reiciendis libero. Laborum voluptas vitae amet ipsum minima officiis? Amet repellat minima ad cum officia dolores iste voluptatibus in tempora?</p>
+            <div class="d-flex gap-5">
+                <i class="bi bi-bag-dash-fill"></i>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, magnam!</p>
+            </div>
+            <div class="d-flex gap-5">
+                <i class="bi bi-book-half"></i>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, magnam!</p>
+            </div>
+            <div class="d-flex gap-5">
+                <i class="bi bi-bar-chart-line-fill"></i>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, magnam!</p>
+            </div>
+
         </div>
         <div class="col-6 ">
-            <img src="{{asset('../images/manusia.png')}}" class="w-100">
+            <img src="{{asset('../images/team.avif')}}" class="w-100">
         </div>
     </div>
 </div>
