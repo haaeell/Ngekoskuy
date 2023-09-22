@@ -11,7 +11,7 @@
 </head>
 <body>
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-body-tertiary">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-body-tertiary fixed-top">
         <div class="container">
           <a href="">
             <img src="{{asset('../images/logo.png')}}" alt="">
