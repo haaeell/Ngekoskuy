@@ -60,7 +60,7 @@
 </style>
 
 <div class="text-center fw-bold">
-    <h1>About us</h1>
+    <h1 class="fw-bold">About us</h1>
 </div>
 <div class="text-center">
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime quisquam quae, amet eius quia nemo quod totam provident dolores veniam!</p>
@@ -89,7 +89,7 @@
     </div>
 </div>
 <div class="container text-center">
-    <h1>Our Team</h1>
+    <h1 class="fw-bold">Our Team</h1>
 </div>
 <div class="container">
     <div class="swiper mySwiper">
