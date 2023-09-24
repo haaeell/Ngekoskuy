@@ -18,10 +18,10 @@ use App\Http\Controllers\LandingPageController;
 Route::get('/', function () {
     return view('welcome');
 });
-// Route::get('/about', [LandingPageController::class, 'about'])->name('about');
-
+Route::get('/hasilspk', [LandingPageController::class, 'hasilspk'])->name('hasilspk');
+Route::get('/spkuser', [LandingPageController::class, 'spkuser'])->name('spkuser');
 Route::middleware(['auth'])->group(function () {
-    
+
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 });
 
