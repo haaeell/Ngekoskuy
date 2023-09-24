@@ -21,6 +21,7 @@ Route::get('/', function () {
 // Route::get('/about', [LandingPageController::class, 'about'])->name('about');
 
 Route::get('/daftarkos', [LandingPageController::class, 'daftarKos'])->name('daftarkos');
+Route::get('/detailkos', [LandingPageController::class, 'detailKos'])->name('detailkos');
 
 Route::middleware(['auth'])->group(function () {
     
