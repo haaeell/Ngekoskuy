@@ -25,7 +25,7 @@
     <div class="container my-5">
         <div class="row d-flex justify-content-center align-items-center">
             <div class="col-md-3 mt-5">
-              <a href="" class="text-decoration-none">
+              <a href="{{route('detailkos')}}" class="text-decoration-none">
                 <div class="card border-0 shadow" >
                   <img src="{{asset('../images/gambar 2.jpeg')}}" width="100" class="card-img-top" alt="...">
                   <div class="card-body">
@@ -38,7 +38,7 @@
               </a> 
             </div>
             <div class="col-md-3 mt-5">
-              <a href="" class="text-decoration-none">
+              <a href="{{route('detailkos')}}" class="text-decoration-none">
                 <div class="card border-0 shadow" >
                   <img src="{{asset('../images/gambar 2.jpeg')}}" width="100" class="card-img-top" alt="...">
                   <div class="card-body">
@@ -51,7 +51,7 @@
               </a> 
             </div>
             <div class="col-md-3 mt-5">
-              <a href="" class="text-decoration-none">
+              <a href="{{route('detailkos')}}" class="text-decoration-none">
                 <div class="card border-0 shadow" >
                   <img src="{{asset('../images/gambar 2.jpeg')}}" width="100" class="card-img-top" alt="...">
                   <div class="card-body">
@@ -64,59 +64,7 @@
               </a> 
             </div>
             <div class="col-md-3 mt-5">
-              <a href="" class="text-decoration-none">
-                <div class="card border-0 shadow" >
-                  <img src="{{asset('../images/gambar 2.jpeg')}}" width="100" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title fw-bold text-primary">Kos 81</h5>
-                    <p class="card-text m-0">Ringroad Selatan,Tamantirto</p>
-                    <p class="card-text text-secondary">Full Service</p>
-                    <p class="card-text">Rp.1.000.000</p>
-                  </div>
-                </div>
-              </a> 
-            </div>
-            <div class="col-md-3 mt-5">
-              <a href="" class="text-decoration-none">
-                <div class="card border-0 shadow" >
-                  <img src="{{asset('../images/gambar 2.jpeg')}}" width="100" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title fw-bold text-primary">Kos 81</h5>
-                    <p class="card-text m-0">Ringroad Selatan,Tamantirto</p>
-                    <p class="card-text text-secondary">Full Service</p>
-                    <p class="card-text">Rp.1.000.000</p>
-                  </div>
-                </div>
-              </a> 
-            </div>
-            <div class="col-md-3 mt-5">
-              <a href="" class="text-decoration-none">
-                <div class="card border-0 shadow" >
-                  <img src="{{asset('../images/gambar 2.jpeg')}}" width="100" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title fw-bold text-primary">Kos 81</h5>
-                    <p class="card-text m-0">Ringroad Selatan,Tamantirto</p>
-                    <p class="card-text text-secondary">Full Service</p>
-                    <p class="card-text">Rp.1.000.000</p>
-                  </div>
-                </div>
-              </a> 
-            </div>
-            <div class="col-md-3 mt-5">
-              <a href="" class="text-decoration-none">
-                <div class="card border-0 shadow" >
-                  <img src="{{asset('../images/gambar 2.jpeg')}}" width="100" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title fw-bold text-primary">Kos 81</h5>
-                    <p class="card-text m-0">Ringroad Selatan,Tamantirto</p>
-                    <p class="card-text text-secondary">Full Service</p>
-                    <p class="card-text">Rp.1.000.000</p>
-                  </div>
-                </div>
-              </a> 
-            </div>
-            <div class="col-md-3 mt-5">
-              <a href="" class="text-decoration-none">
+              <a href="{{route('detailkos')}}" class="text-decoration-none">
                 <div class="card border-0 shadow" >
                   <img src="{{asset('../images/gambar 2.jpeg')}}" width="100" class="card-img-top" alt="...">
                   <div class="card-body">
