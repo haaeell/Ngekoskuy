@@ -1,6 +1,7 @@
 @extends('layouts.landingpage')
 
 @section('content')
+<div style="height: 100px"></div>
     <div class="container">
         <div class="mt-4">
             <h2>Pengertian Sistem Pendukung Keputusan (SPK)</h2>
@@ -24,7 +25,6 @@
             <div class="alert alert-primary mt-4" role="alert" >
                 Pencarian hasil keputusan berhasil
               </div>
-        <div class="container table-container">
         <h1 class="my-4">Tabel Kriteria dan Pembobotan</h1>
         <table class="table table-bordered">
             <thead>
@@ -40,24 +40,31 @@
                     <td>1</td>
                     <td>Kriteria 1</td>
                     <td>0.2</td>
-                    <td><button class="btn btn-primary">Edit</button></td>
+                    <td>
+                        <a href class="btn btn-primary">Edit</a>
+                        <a href class="btn btn-danger">Hapus</a>
+                    </td>
                 </tr>
                 <tr>
                     <td>2</td>
                     <td>Kriteria 2</td>
                     <td>0.3</td>
-                    <td><button class="btn btn-primary">Edit</button></td>
+                    <td>
+                        <a href class="btn btn-primary">Edit</a>
+                        <a href class="btn btn-danger">Hapus</a>
+                    </td>
                 </tr>
                 <tr>
                     <td>3</td>
                     <td>Kriteria 3</td>
                     <td>0.5</td>
-                    <td><button class="btn btn-primary">Edit</button></td>
+                    <td>
+                        <a href class="btn btn-primary">Edit</a>
+                        <a href class="btn btn-danger">Hapus</a>
+                    </td>
                 </tr>
             </tbody>
         </table>
-
-        <button class="btn btn-success">Submit</button>
-    </div>
+        <a href="#" class="btn btn-primary d-block py-3 fw-semibold my-5">SUBMIT</a>
 
 @endsection
