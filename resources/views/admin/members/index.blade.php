@@ -14,54 +14,79 @@
             </button>
         </div>
     @endif
-      <div class="card">
+      <div class="card p-4">
+        <div class="">
+
+            <span class="text-danger fw-bold">CATATAN*</span> 
+            <ul>
+                <li>
+                    <small >PREVIEW-IMAGE DI MODAL UPDATE</small>
+                </li>
+                <li>
+                    <small >INPUT ERROR VALIDATION</small>
+                </li>
+                <li>
+                    <small >SWEET ALERT SUCCESS</small>
+                </li>
+                <li>
+                    <small >CONFIRM UPDATE SWEET ALERT</small>
+                </li>
+                <li>
+                    <small >DETAIL PAGE</small>
+                </li>
+                <li>
+                    <small >RULES MESSAGE VALIDATION INPUT</small>
+                </li>
+                <li>
+                    <small >RESPONSIVE MOTTO </small>
+                </li>
+            </ul>
+        </div>
         <div class="card-header">
           <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalCenter">Tambah</button>
+          
         </div>
-        <div class="card-body p-0">
-          <div class="table-responsive">
-            <table class="table table-striped">
-              <tr>
-                <th>No</th>
-                <th>Nama</th>
-                <th>Email</th>
-                <th>Posisi</th>
-                <th>Gambar</th>
-                <th>Motto</th>
-                <th>GitHub</th>
-                <th>LinkedIn</th>
-                <th>Instagram</th>
-                <th>Aksi</th>
-              </tr>
-              @foreach ($members as $item)
-                  
-              <tr>
-                <td>{{ $loop->iteration }}</td>
-                    <td>{{ $item->Nama }}</td>
-                    <td>{{ $item->Email }}</td>
-                    <td>{{ $item->posisi }}</td>
-                    <td>
-                        <img src="{{ $item->image ? asset('storage/' . $item->image) : ('https://cdn-icons-png.flaticon.com/512/149/149071.png') }}" alt="{{ $item->Nama }}" width="50">
-
-                    </td>
-                    <td>{{ $item->motto }}</td>
-                    <td>{{ $item->github }}</td>
-                    <td>{{ $item->linkedin }}</td>
-                    <td>{{ $item->instagram }}</td>
-                <td>
-                    <div class="d-flex">
-
-                        <a href="#" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#modalUpdate{{ $item->id }}">Edit</a>
-                        <form action="{{ route('members.destroy', $item->id) }}" method="POST">
-                            @csrf
-                            @method('DELETE')
-                            <button type="button" data-name="{{ $item->Nama }}" class="btn btn-danger delete-button">Hapus</button>
-                        </form>
-                    </div>
-                </td>
-              </tr>
-              @endforeach
+        <div class="card-body"> 
+          <div class="table-responsive" >
+            <table id="table_id" class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>No</th>
+                        <th>Nama</th>
+                        <th>Email</th>
+                        <th>Posisi</th>
+                        <th>Gambar</th>
+                        <th>Motto</th>
+                        <th>Aksi</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach ($members as $item)
+                    <tr>
+                        <td>{{ $loop->iteration }}</td>
+                        <td>{{ $item->Nama }}</td>
+                        <td>{{ $item->Email }}</td>
+                        <td>{{ $item->posisi }}</td>
+                        <td>
+                            <img src="{{ $item->image ? asset('storage/' . $item->image) : ('https://cdn-icons-png.flaticon.com/512/149/149071.png') }}" alt="{{ $item->Nama }}" width="50">
+                        </td>
+                        <td>{{ $item->motto }}</td>
+                        <td>
+                            <div class="d-flex gap-2">
+                                <a href="#" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#modalUpdate{{ $item->id }}">View</a>
+                                <a href="#" class="btn btn-warning mx-1" data-bs-toggle="modal" data-bs-target="#modalUpdate{{ $item->id }}">Edit</a>
+                                <form action="{{ route('members.destroy', $item->id) }}" method="POST">
+                                    @csrf
+                                    @method('DELETE')
+                                    <button type="button" data-name="{{ $item->Nama }}" class="btn btn-danger delete-button">Hapus</button>
+                                </form>
+                            </div>
+                        </td>
+                    </tr>
+                    @endforeach
+                </tbody>
             </table>
+            
           </div>
         </div>
       </div>
