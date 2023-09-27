@@ -10,6 +10,10 @@ class LandingPageController extends Controller
     public function index(){
         return view('welcome');
     }
+    public function about()
+    {
+        return view('landingpage.about');
+    }
     public function hasilspk(){
         return view('landingpage.hasilspk.hasilspk');
 

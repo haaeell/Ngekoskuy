@@ -26,12 +26,17 @@ Route::get('/detailkos', [LandingPageController::class, 'detailKos'])->name('det
 
 Route::middleware(['auth'])->group(function () {
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::resource('users', UserController::class);
 Route::resource('members', MemberController::class);
+});
+Route::get('/', function () {
+    return view('welcome');
+});
+Route::get('/about', [LandingPageController::class, 'about'])->name('about');
+Route::middleware(['auth'])->group(function () {
 
+    Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 });
 
 
 Auth::routes();
-
