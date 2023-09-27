@@ -18,9 +18,6 @@
             text-align: center;
         }
 
-        .btn-cta {
-            background: linear-gradient(to right, #003D64, #008FEB);
-        }
 
         .text {
             font-weight: 600;
