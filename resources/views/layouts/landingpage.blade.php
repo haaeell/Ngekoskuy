@@ -73,20 +73,6 @@
         </div>
       </nav>
       
-      
-
-      <div class="min-vh-100">
-        @yield('content')
-      </div>
-      <div class="d-flex gap-2 fw-semibold">
-        <button class="btn btn-login px-4 py-2 fw-semibold ">Login</button>
-        <button class="btn btn-outline ">Register</button>
-      </div>
-    </div>
-  </nav>
-
-
-
   <div class="min-vh-100">
     @yield('content')
   </div>
