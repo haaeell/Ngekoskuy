@@ -15,6 +15,16 @@ class LandingPageController extends Controller
 
     public function spkuser(){
         return view('landingpage.spkuser.spkuser');
-
     }
+    
+    public function daftarKos()
+    {
+        return view('landingpage.daftarkos');
+    }
+    public function detailKos()
+    {
+        return view('landingpage.detailkos');
+    }
+
+    
 }
