@@ -23,19 +23,14 @@ Route::get('/hasilspk', [LandingPageController::class, 'hasilspk'])->name('hasil
 Route::get('/spkuser', [LandingPageController::class, 'spkuser'])->name('spkuser');
 Route::get('/daftarkos', [LandingPageController::class, 'daftarKos'])->name('daftarkos');
 Route::get('/detailkos', [LandingPageController::class, 'detailKos'])->name('detailkos');
+Route::get('/about', [LandingPageController::class, 'about'])->name('about');
 
 Route::middleware(['auth'])->group(function () {
 
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::resource('users', UserController::class);
 Route::resource('members', MemberController::class);
-});
-Route::get('/', function () {
-    return view('welcome');
-});
-Route::get('/about', [LandingPageController::class, 'about'])->name('about');
-Route::middleware(['auth'])->group(function () {
 
-    Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 });
 
 

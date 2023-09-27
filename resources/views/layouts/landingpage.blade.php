@@ -35,7 +35,7 @@
                 <a class="nav-link {{ request()->is('spkuser') ? 'active' : ''}}" href="{{route('spkuser')}}">SPK </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Tentang Kami </a>
+                <a class="nav-link {{ request()->is('about') ? 'active' : ''}}" href="{{route('about')}}">Tentang Kami </a>
               </li>
             </ul>
             <ul class="navbar-nav gap-2 fw-semibold">
