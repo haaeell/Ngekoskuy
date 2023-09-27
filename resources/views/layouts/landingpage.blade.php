@@ -24,23 +24,50 @@
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav mx-auto">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link  {{ request()->is('/') ? 'active' : ''}}" aria-current="page" href="{{route('welcome')}}">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Daftar Kos</a>
+                <a class="nav-link {{ request()->is('daftarkos') ? 'active' : ''}}" href="{{route('daftarkos')}}">Daftar Kos</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">SPK </a>
+                <a class="nav-link {{ request()->is('spkuser') ? 'active' : ''}}" href="{{route('spkuser')}}">SPK </a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Tentang Kami </a>
               </li>
             </ul>
+            <ul class="navbar-nav gap-2 fw-semibold">
+              @if (Route::has('login'))
+                    @auth
+                        @if (Auth::user()->role_id == 1 || Auth::user()->role_id == 2 )
+                            <li class="nav-item">
+                                <a class="btn btn-dark  btn-login px-4 py-2 fw-semibold nav-link" href="{{ url('/home') }}">Dashboard</a>
+                            </li>
+                        @else
+                            <li class="nav-item">
+                                <a class="btn btn-login px-4 py-2 fw-semibold nav-link" href="{{ route('logout') }}"
+                                   onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+                                    Logout
+                                </a>
+                            </li>
+                            <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                @csrf
+                            </form>
+                        @endif
+                    @else
+                        <li class="nav-item">
+                            <a class="btn btn-login px-4 py-2 fw-semibold nav-link" href="{{ route('login') }}">Log In</a>
+                        </li>
+                        @if (Route::has('register'))
+                            <li class="nav-item">
+                                <a class="btn btn-outline nav-link px-4" href="{{ route('register') }}">Register</a>
+                            </li>
+                        @endif
+                    @endauth
+                @endif
+            </ul>
           </div>
-          <div class="d-flex gap-2 fw-semibold">
-            <button class="btn btn-login px-4 py-2 fw-semibold ">Login</button>
-          <button class="btn btn-outline ">Register</button>
-          </div>
+          
         </div>
       </nav>
       

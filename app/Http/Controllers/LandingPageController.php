@@ -7,6 +7,9 @@ use App\Models\User;
 
 class LandingPageController extends Controller
 {
+    public function index(){
+        return view('welcome');
+    }
     public function hasilspk(){
         return view('landingpage.hasilspk.hasilspk');
 
@@ -16,7 +19,7 @@ class LandingPageController extends Controller
     public function spkuser(){
         return view('landingpage.spkuser.spkuser');
     }
-    
+
     public function daftarKos()
     {
         return view('landingpage.daftarkos');

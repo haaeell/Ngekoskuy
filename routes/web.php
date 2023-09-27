@@ -18,13 +18,9 @@ use App\Http\Controllers\MemberController;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', [LandingpageController::class, 'index'])->name('welcome');
 Route::get('/hasilspk', [LandingPageController::class, 'hasilspk'])->name('hasilspk');
 Route::get('/spkuser', [LandingPageController::class, 'spkuser'])->name('spkuser');
-// Route::get('/about', [LandingPageController::class, 'about'])->name('about');
-
 Route::get('/daftarkos', [LandingPageController::class, 'daftarKos'])->name('daftarkos');
 Route::get('/detailkos', [LandingPageController::class, 'detailKos'])->name('detailkos');
 
