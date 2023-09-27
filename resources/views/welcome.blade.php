@@ -102,12 +102,12 @@
         <div class=" py-5 mt-5"
             style="position: relative; z-index: 2; color: white; text-align: center; display: flex; justify-content: space-between; flex-direction: column; align-items: center;">
             <div class="col-md-8">
-                <p class="m-0">Lorem ipsum dolor</p>
+                <p class="m-0">Temukan kosan impian Anda</p>
                 <h1 class="mb-3" style="font-weight: 700;font-size :50px;">Feel Better About Finding <br>NgekosKuy</h1>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit illum autem soluta minima totam
-                    doloremque ab voluptas sequi consequatur ipsam!</p>
+                <div class="col-md-6"></div>
+                <p>Di NgekosKuy, kami menyediakan berbagai pilihan kosan yang nyaman dan sesuai dengan kebutuhan Anda. Nikmati kemudahan mencari tempat tinggal ideal Anda bersama kami!</p>
             </div>
-            <div style="margin-right: 10px; color: white">
+            <div class="d-flex gap-2">
                 <a class="btn btn-cta btn-primary px-5" href="#">Button</a>
                 <a class="btn btn-outline px-5" href="#">Button</a>
             </div>
