@@ -309,6 +309,9 @@
                                 <li class="{{ request()->is('kriteria*') ? 'active' : '' }}">
                                     <a class="nav-link" href="{{ route('kriteria.index') }}">Kriteria</a>
                                 </li>
+                                <li class="{{ request()->is('penilaian*') ? 'active' : '' }}">
+                                    <a class="nav-link" href="{{ route('penilaian.index') }}">Normalisasi</a>
+                                </li>
                                 <li class="{{ request()->is('peminjaman*') ? 'active' : '' }}">
                                     <a class="nav-link" href="/">Hasil SPK</a>
                                 </li>
