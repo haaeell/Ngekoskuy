@@ -291,15 +291,12 @@
                         </li>
                         <li class="menu-header">Data Master</li>
                         <li
-                            class="dropdown {{ request()->is('books*') || request()->is('categories*') ? 'active' : '' }}">
+                            class="dropdown {{ request()->is('kosan*') || request()->is('categories*') ? 'active' : '' }}">
                             <a href="#" class="nav-link has-dropdown"><i class="fas fa-fire"></i><span>Kelola
                                     Kos</span></a>
                             <ul class="dropdown-menu">
-                                <li class="{{ request()->is('books*') ? 'active' : '' }}">
-                                    <a class="nav-link" href="/">Data Kos</a>
-                                </li>
-                                <li class="{{ request()->is('categories*') ? 'active' : '' }}">
-                                    <a class="nav-link" href="/">Kategori</a>
+                                <li class="{{ request()->is('kosan*') ? 'active' : '' }}">
+                                    <a class="nav-link" href="{{ route('kosan.index') }}">Data Kos</a>
                                 </li>
                             </ul>
                         </li>
@@ -309,11 +306,11 @@
                             <a href="#" class="nav-link has-dropdown"><i class="fas fa-fire"></i><span>Data
                                     spk</span></a>
                             <ul class="dropdown-menu">
-                                <li class="{{ request()->is('peminjaman*') ? 'active' : '' }}">
-                                    <a class="nav-link" href="/">Alternatif</a>
+                                <li class="{{ request()->is('kriteria*') ? 'active' : '' }}">
+                                    <a class="nav-link" href="{{ route('kriteria.index') }}">Kriteria</a>
                                 </li>
-                                <li class="{{ request()->is('pengembalian*') ? 'active' : '' }}">
-                                    <a class="nav-link" href="/">Kriteria</a>
+                                <li class="{{ request()->is('peminjaman*') ? 'active' : '' }}">
+                                    <a class="nav-link" href="/">Hasil SPK</a>
                                 </li>
                             </ul>
                         </li>

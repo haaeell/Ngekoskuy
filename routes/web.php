@@ -7,7 +7,7 @@ use App\Http\Controllers\UserController;
 use App\Http\Controllers\MemberController;
 use App\Http\Controllers\KriteriaController;
 use App\Http\Controllers\KosanController;
-
+use App\Http\Controllers\PenilaianKosanController;
 
 /*
 |--------------------------------------------------------------------------
@@ -34,6 +34,7 @@ Route::resource('users', UserController::class);
 Route::resource('members', MemberController::class);
 Route::resource('kriteria', KriteriaController::class);
 Route::resource('kosan', KosanController::class);
+Route::resource('penilaian', PenilaianKosanController::class);
 
 });
 
