@@ -5,6 +5,8 @@ use Illuminate\Support\Facades\Auth;
 use App\Http\Controllers\LandingPageController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\MemberController;
+use App\Http\Controllers\KriteriaController;
+use App\Http\Controllers\KosanController;
 
 
 /*
@@ -30,6 +32,8 @@ Route::middleware(['auth'])->group(function () {
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::resource('users', UserController::class);
 Route::resource('members', MemberController::class);
+Route::resource('kriteria', KriteriaController::class);
+Route::resource('kosan', KosanController::class);
 
 });
 
