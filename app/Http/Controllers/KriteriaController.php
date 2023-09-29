@@ -13,7 +13,8 @@ class KriteriaController extends Controller
     public function index()
     {
         $kriteria = Kriteria::all();
-        return view('admin.kriteria.index',compact('kriteria'));
+        $totalBobot = Kriteria::sum('bobot');
+        return view('admin.kriteria.index',compact('kriteria', 'totalBobot'));
     }
 
     /**
@@ -64,19 +65,15 @@ class KriteriaController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, Kriteria $kriteria)
+    public function update(Request $request, $id)
 {
-    $request->validate([
+    $validatedData = $request->validate([
         'nama' => 'required|string',
         'bobot' => 'required|integer|min:1|max:100',
         'jenis' => 'required|in:Cost,Benefit',
     ]);
-
-    $kriteria->update([
-        'nama' => $request->nama,
-        'bobot' => $request->bobot,
-        'jenis' => $request->jenis,
-    ]);
+        $kriteria = Kriteria::FindOrFail($id);
+        $kriteria->update($validatedData);
 
     return redirect()->back()->with('success', 'Kriteria telah berhasil diperbarui.');
 }
